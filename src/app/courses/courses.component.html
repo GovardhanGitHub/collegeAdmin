@@ -1,0 +1,14 @@
+<div >
+  <div *ngFor="let course of courses">
+    <div  class="card m-2"  >
+      <div class="card-body">
+        <h5 class="card-title">{{course.name}}</h5>
+        <p class="card-text">{{course.description}}</p>
+        <a  class="btn btn-info m-2 text-white">Seats : {{course.numberOfSeats}}</a>
+        <a  class="btn btn-info m-2 text-white">filled : {{course.numberOfSeatsFilledPositions}}</a>
+        <a  class="btn btn-info  text-white">vacant : {{(course.numberOfSeats - course.numberOfSeatsFilledPositions)}}</a>
+      </div>
+    </div>
+  </div>
+</div>
+

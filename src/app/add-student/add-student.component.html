@@ -1,0 +1,18 @@
+<div class="container">
+  <form [formGroup]="studentForm" (submit)="save()">
+
+
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Name</label>
+      <input formControlName="name" name="name" id="name" type="text" class="form-control">
+    </div>
+
+
+
+    <button type="submit" class="mt-5 float-left btn btn-primary"> save </button>
+
+
+  </form>
+  <app-toast-container aria-live="polite" aria-atomic="true"> </app-toast-container>
+</div>

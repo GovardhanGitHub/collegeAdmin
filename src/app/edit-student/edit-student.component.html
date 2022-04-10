@@ -1,0 +1,33 @@
+
+
+<div class="container">
+  <form [formGroup]="studentForm" (submit)="updateStudent()">
+
+
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Name</label>
+      <input formControlName="name" name="name" id="name" type="text" class="form-control">
+    </div>
+
+    <div class="mt-2">
+
+      <label for="Courses">Courses</label>
+      <ng-multiselect-dropdown formControlName="courses" [settings]="dropdownSettings" [data]="courses"
+        (onSelect)="onItemSelect($event)" (onSelectAll)="onSelectAll($event)">
+      </ng-multiselect-dropdown>
+
+    </div>
+
+
+    <button type="submit" class="mt-5 float-left btn btn-primary"> submit </button>
+
+
+  </form>
+
+  <app-toast-container aria-live="polite" aria-atomic="true"> </app-toast-container>
+</div>
+
+
+
+

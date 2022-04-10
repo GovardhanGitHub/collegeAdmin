@@ -1,0 +1,30 @@
+<div class="container mt-2">
+
+
+  <div class="container">
+    <button class="btn btn-success float-right"  routerLink="/addStudent" type="button">Add student</button>
+  </div>
+
+
+<table class="table table-bordered mt-2">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Courses</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let student of students " >
+    <tr >
+      <th scope="row">{{student.id}}</th>
+      <td>{{student.name}}</td>
+        <td>{{student.courses  | json  }} </td>
+      <td> <button class="btn btn-sm btn-info text-white" [routerLink]="['editStudent',student.id]" > Add / Edit Courses</button>  |  <button (click)="deleteStudent(student.id)" class="btn btn-sm btn-danger ">Delete</button> </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+</div>
