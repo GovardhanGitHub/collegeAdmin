@@ -15,6 +15,7 @@ import { AddStudentComponent } from './add-student/add-student.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToastContainerComponent } from './toast-container/toast-container.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { ToastContainerComponent } from './toast-container/toast-container.compo
     StudentsComponent,
     EditStudentComponent,
     AddStudentComponent,
-    ToastContainerComponent
+    ToastContainerComponent,
+
   ],
   imports: [
     BrowserModule,

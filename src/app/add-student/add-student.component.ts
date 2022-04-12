@@ -22,7 +22,7 @@ export class AddStudentComponent implements OnInit {
   }
 
   showSuccess() {
-    this.toastService.show('successfully  Student is added', { classname: 'bg-success text-light', delay: 500 });
+    this.toastService.show('successfully  Student is added', { classname: 'bg-success text-light', delay: 900 });
   }
 
 

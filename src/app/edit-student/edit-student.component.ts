@@ -100,7 +100,7 @@ export class EditStudentComponent implements OnInit {
 
 
   showSuccess() {
-    this.toastService.show('successfully courses were added to this Student', { classname: 'bg-success text-light', delay: 500 });
+    this.toastService.show('successfully courses were added to this Student', { classname: 'bg-success text-light', delay: 800 });
   }
 
 
